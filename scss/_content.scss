@@ -1,0 +1,220 @@
+
+body { background-image:url(../img/fondo-porfolio-diseño.jpg);
+
+width: $w-100;
+flex-direction: column;
+
+}
+
+@for $i from 1 through 6{
+ .text-#{$i}{
+     font-size: 0.7em *$i;
+ }
+}
+
+p { 
+    color:#1E1D1D; 
+    text-decoration: none;
+    font-weight: 300rem;
+    font-size: $textsmall;
+    
+}
+
+h3{ 
+    color:#1E1D1D; 
+    text-decoration: none;
+    font-weight: 300rem;
+    font-size: $textmedium;
+}
+
+
+h2 {
+    font-size: $textmedium;
+    text-decoration: none;
+    font-weight: 300rem;
+    }
+
+// INDEX HTML
+
+
+.mainbox{   
+    display: $d-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: $w-100;
+       }
+
+.mainbox-img  { 
+    display: $d-flex;
+    justify-content: flex-start;
+    align-content: center;
+     }
+
+.mainbox--img-presenta { 
+    display: $d-flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: $textmedium;
+
+     }
+
+.mainbox--img-presenta:hover{cursor: pointer;}
+
+
+
+// HTML LOGOS
+
+.logosbox{ 
+    display: $d-flex;
+   justify-content: space-around;
+   flex-direction: row;
+ 
+}
+
+.logosbox--content{
+    display: $d-flex;
+    justify-content: space-around;
+    align-content: center; 
+    }
+
+ .logosbox--content-terra:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.logosbox--content-lili:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.logosbox--content-deli:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}   
+
+// info HTML
+.SOFTWARE_logo{
+    display: flex;
+    justify-content: safe flex-start;
+}
+
+@each $icono in indesign, illustrator, photoshop, sonyvegas{
+ .#{$icono}-icon{
+     background-image:url(../img/#{$icono}.png);
+     width: 40px;
+     height: 40px;
+     background-size:100%;
+     list-style: none;
+ }
+}
+
+.infobox {
+    display: grid;
+    margin-left: 12%;
+    grid-template-columns: repeat(auto auto);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "E1 G1" 
+                         "S1 E2"
+                         "H1 H2"
+
+
+                         }
+
+.estudios{
+    grid-area: E1; 
+   
+}
+
+.gatoinfo{grid-area: G1;
+    
+}
+
+.SOFTWARE{grid-area: S1;
+    
+}
+
+.EXPERIENCIA{grid-area: E2;
+ 
+}
+
+.habilidades{grid-area: H1;
+    
+}
+
+.habilidadesPERSO{grid-area: H2;
+    
+}
+
+// contacto HTML
+
+.formulario {
+    margin-left: 12%;
+  }
+
+
+ 
+  button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+ }
+
+ .for { 
+    background-color: $blanco; 
+    border: $coral;
+   
+   
+}
+
+.formulario_email { 
+    background-color: $blanco; 
+    border: $coral;
+    
+}
+
+.formulario_telefono{ 
+    background-color: $blanco; 
+    border: $coral;
+    
+}
+.formulario_web{ 
+    background-color: $blanco; 
+    border: $coral;
+  
+}
+
+.formulario_asunto{ 
+    background-color: $blanco; 
+    border: $coral;
+   
+}
+.formulario_mensaje{ 
+    background-color: $blanco; 
+    border: $coral;
+   
+}
+
+
+
+// foto HTML
+
+
+.alinear {
+     display: $d-flex;
+    justify-content: unsafe center;
+    align-content: center;
+    align-items: center;
+    
+}
+.alinear-pez{ 
+    margin-left: $mx-2;
+    margin-top:$mx-2;}
+
+.alinear-pako{ 
+    margin-left: $mx-2;
+    margin-top:$mx-2;}
+
+.alinear-ambos{ 
+    margin-left: $mx-2;
+    margin-top:$mx-2;}
+
