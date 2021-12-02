@@ -1,0 +1,26 @@
+nav{ display: $d-flex;
+
+	img{ width: $w-50;}
+
+		ul{ display: $d-flex;
+			justify-content: space-between;
+			text-decoration: none;
+			margin: $mx-1;
+			color: $dark;
+			
+			
+			li{
+				list-style: none;
+				margin: $mx-1;
+			    a{ color: $dark;
+				&:hover{ color:darkblue;
+				transform: skew(-10deg);}
+
+
+			
+			}
+		}
+	
+	}
+}
+
